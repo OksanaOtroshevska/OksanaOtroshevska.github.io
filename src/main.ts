@@ -117,13 +117,13 @@ function buildCard(city: City, data: WeatherApiResponse): HTMLElement {
 
     <div class="footer-left">
       <div class="footer-item">
-        <img src="./media/cloud-wind-icon.svg" alt="Wind"> ${windText}
+        <img src="/media/cloud-wind-icon.svg" alt="Wind"> ${windText}
       </div>
       <div class="footer-item">
-        <img src="./media/drop-icon.svg" alt="Humidity"> ${humidityText}
+        <img src="/media/drop-icon.svg" alt="Humidity"> ${humidityText}
       </div>
       <div class="footer-item">
-        <img src="./media/sun-icon.svg" alt="Sunshine"> ${sunshineText}
+        <img src="/media/sun-icon.svg" alt="Sunshine"> ${sunshineText}
       </div>
     </div>
 
