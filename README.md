@@ -7,6 +7,10 @@
 * TypeScript: "5.8.3"
 * Vite: "7.1.2"
 * CSS
+* Eslint: "9.38.0"
+* TypeScript-eslint: "8.46.2"
+* Jiti: "2.6.1"
+* Prettier: "3.6.2"
 
 
 ## Клонируем репозиторий:
