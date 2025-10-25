@@ -80,7 +80,6 @@ function buildCard(city: City, data: WeatherApiResponse): HTMLElement {
   const card = document.createElement("div")
   card.className = "weather-card"
   card.className = "weather-card fade-in"
-  
 
   // температура
   const temp = Math.round(data.current.temperature_2m)
@@ -128,16 +127,16 @@ function buildCard(city: City, data: WeatherApiResponse): HTMLElement {
     <img src="${iconUrl}" alt="${desc}" class="weather-icon" />
   `
 
-// тема (день/ночь)
-const hour = new Date(data.current.time).getHours()
-const isDay = hour >= 6 && hour < 20
+  // тема (день/ночь)
+  const hour = new Date(data.current.time).getHours()
+  const isDay = hour >= 6 && hour < 20
 
-// карточка
-card.classList.add(isDay ? "day" : "night")
+  // карточка
+  card.classList.add(isDay ? "day" : "night")
 
-// применяем тему для всей страницы
-document.body.classList.remove("day", "night") // очищаем старые классы
-document.body.classList.add(isDay ? "day" : "night") // добавляем текущую тему
+  // применяем тему для всей страницы
+  document.body.classList.remove("day", "night") // очищаем старые классы
+  document.body.classList.add(isDay ? "day" : "night") // добавляем текущую тему
 
   return card
 }

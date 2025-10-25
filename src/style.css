@@ -45,7 +45,6 @@ body.night {
   gap: 1.25rem;
 }
 
-/* Карточка */
 .weather-card {
   position: relative;
   border-radius: 14px;
@@ -74,12 +73,13 @@ body.night {
   }
 }
 
-/* --- Анимация появления карточек --- */
+/* Анимация появления карточек */
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(20px) scale(0.97);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -92,9 +92,8 @@ body.night {
 
 .weather-card:hover {
   transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 0 20px rgba(102, 126, 234, 0.4); /* фиолетовое свечение */
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.4);
 }
-
 
 .weather-card.day {
   background: var(--card-day);
@@ -113,7 +112,6 @@ body.night {
   color: #a11;
 }
 
-/* header */
 .weather-card__header {
   display: flex;
   justify-content: space-between;
@@ -133,7 +131,6 @@ body.night {
   opacity: 0.9;
 }
 
-/* body */
 .weather-card__body {
   text-align: center;
   margin-top: 10px;
@@ -154,7 +151,6 @@ body.night {
   font-weight: 500;
 }
 
-/* нижняя зона */
 .footer-left {
   position: absolute;
   left: 16px;
@@ -192,8 +188,13 @@ body.night {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 @media (max-width: 420px) {
